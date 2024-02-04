@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vallejo Public Library - Book Catalog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        footer {
+            background-color: #3e566f;
+            color: #f8f4f4;
+            text-align: center;
+            padding: 8px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .book-search-bar {
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .category {
+            flex: 1;
+            text-align: center;
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .category:hover {
+            background-color: #f0f0f0;
+        }
+
+        .book-entry {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .reserve-link {
+            display: block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .reserve-link:hover {
+            background-color: #2675af;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Vallejo Public Library, California</h1>
+        <nav>
+            <ul>
+                <li><a href="home page.html">Home</a></li>
+                <li><a href="library card form.html">Library Card Form</a></li>
+                <li><a href="contact page.html">Contact</a></li>
+                <li><a href="book catalog.html">Book Catalog</a></li>
+                <li><a href="book reservation.html">Book Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Book Catalog Page</h2>
+
+        <div class="book-search-bar">
+            <label for="book-search">Book Search:</label>
+            <input type="text" id="book-search" placeholder="Search for a book...">
+            <button type="button">Search</button>
+        </div>
+
+        <div class="categories">
+            <div class="category">
+                <h3>Fiction</h3>
+                <p>Explore fiction books for an immersive experience.</p>
+            </div>
+
+            <div class="category">
+                <h3>Non-Fiction</h3>
+                <p>Dive into the world of non-fiction for knowledge and facts.</p>
+            </div>
+
+            <div class="category">
+                <h3>Mystery</h3>
+                <p>Discover mystery books for thrilling and suspenseful reads.</p>
+            </div>
+        </div>
+
+        <div class="book-entry">
+            <h3>Book Title</h3>
+            <p><strong>Author:</strong> Author Name</p>
+            <p><strong>Genre:</strong> Genre Name</p>
+            <p><strong>Publication Year:</strong> 20XX</p>
+            <p><strong>Description:</strong> A brief summary of the book...</p>
+            <p><strong>Copies Available:</strong> X out of Y</p>
+            <a href="#" class="reserve-link">Reserve a Copy</a>
+        </div>
+
+        <!-- Repeat the book-entry section for each book in the catalog -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vallejo Public Library. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
