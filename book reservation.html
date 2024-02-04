@@ -80,10 +80,21 @@
     </header>
     <section>
         <h2>Book Reservation</h2>
+        <div>
+            <h3>User Login</h3>
+            <form action="login-process.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
 
         <form action="reserve-book.html" method="post">
-            <label for="userLogin">User Login:</label>
-            <input type="text" id="userLogin" name="userLogin" required>
+            
 
             <label for="searchBar">Search Bar:</label>
             <input type="text" id="searchBar" name="searchBar" placeholder="Enter book title" required>
